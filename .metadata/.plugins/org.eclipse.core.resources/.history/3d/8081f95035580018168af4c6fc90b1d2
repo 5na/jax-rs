@@ -1,0 +1,11 @@
+package Friends.Service;
+import java.util.HashMap;
+import Friends.pojo;
+
+
+public class FriendCollectionService {
+	
+	static HashMap<Integer, friends> friendsMap;
+	
+	
+}

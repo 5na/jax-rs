@@ -1,0 +1,31 @@
+package Friends.Service;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import Friends.pojo.friends;
+
+
+public class FriendCollectionService {
+	
+	static HashMap<Integer, friends> friendsMap;
+	
+	public FriendCollectionService(){
+		super();
+	
+	
+	friends frnd1 = new friends(1,"a","abc");
+	friends frnd2 = new friends(1,"b","babc");
+	
+	friendsMap.put(1,frnd1);
+	friendsMap.put(1,frnd2);
+
+	}
+	public List getAllFriends(){ 
+		List friends = new ArrayList<friends>(friendsMap.values());
+		return friends;
+	}
+	
+	
+	
+}

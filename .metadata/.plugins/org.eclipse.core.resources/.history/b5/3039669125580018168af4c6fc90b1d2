@@ -1,0 +1,8 @@
+package com.demo.restclient;
+
+public class DemoRestClient {
+
+	public static void main(String args[]) {
+		ClientConfig config = new
+	}
+}

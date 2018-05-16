@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+<fullyQualifiedTypeName name="org.glassfish.jersey.client.ClientConfig"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.ClientBuilder"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.Client"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
+<fullyQualifiedTypeName name="javax.ws.rs.client.WebTarget"/>
+<fullyQualifiedTypeName name="com.sun.research.ws.wadl.Response"/>
+<fullyQualifiedTypeName name="Friends.pojo.friends"/>
+<fullyQualifiedTypeName name="Friends.Service.FriendCollectionService"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+</qualifiedTypeNameHistroy>

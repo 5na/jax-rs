@@ -1,0 +1,11 @@
+127.0.0.1 - - [15/May/2018:15:31:42 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:40:14 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [15/May/2018:15:47:25 +0530] "GET /SamplerRest/rest/cts/105/F HTTP/1.1" 200 12
+127.0.0.1 - - [15/May/2018:15:54:14 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:55:09 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [15/May/2018:15:55:09 +0530] "GET /SamplerRest/ HTTP/1.1" 404 975
+127.0.0.1 - - [15/May/2018:15:55:17 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:57:21 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:57:21 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:58:02 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2
+127.0.0.1 - - [15/May/2018:15:58:02 +0530] "GET /SamplerRest/rest/cts/hi HTTP/1.1" 200 2

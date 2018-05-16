@@ -1,0 +1,20 @@
+package com.jersey.helloworld;
+
+import javax.ws.rs.Path;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.Produces;
+
+@Path("/cts")
+public class hellojersey {
+
+	@GET
+	@Path("/hi")
+	@Produces(MediaType.TEXT_PLAIN)
+     public String sayHi()
+	{
+	  String msg ="HI"	;
+	  return msg;
+	}
+}

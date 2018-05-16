@@ -1,0 +1,51 @@
+package com.jersey.helloworld;
+import javax.ws.rs.Path;
+import javax.ws.rs.GET;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.Produces;
+
+@Path("/cts")
+public class hellojersey {
+
+	@GET
+	@Path("/hi")
+	@Produces(MediaType.TEXT_PLAIN)
+     public String sayHi()
+	{
+	  String msg ="HI"	;
+	  return msg;
+	}
+	
+	/*@GET
+	@Path("/{urlvalue1}/{urlvalue2}")
+	@Produces(MediaType.TEXT_PLAIN)
+     public String sayHello(@PathParam("urlvalue1") String value1, @PathParam("urlvalue2") String value2)
+	{
+		String msg = "hi " + value1 + " and " +value2;
+		return msg;
+	}
+	*/
+
+	@GET
+	@Path("/{urlvalue1}/{urlvalue2}")
+	@Produces(MediaType.TEXT_PLAIN)
+     public String temperature(@PathParam("urlvalue1") double value1, @PathParam("urlvalue2") String value2)
+	{
+		if(value2 == "F")
+		{
+	      value1 = ((value1 * 9) / 5) + 32;
+	      String msg = value1+ "Celcius";
+	    		  return msg;
+		}
+		else if(value2 == "C")
+		{
+			value1 = (value1 - 32) * (5/9);
+			String msg1 = value1 + "Farenheit";
+			return msg1;
+		}
+		return "inputvalidvalues";
+		
+		
+	}
+}

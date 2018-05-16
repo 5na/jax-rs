@@ -1,0 +1,25 @@
+package Friends.Controller;
+
+import java.util.List;
+
+import Friends.Service.FriendCollectionService;
+
+public class friendsController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		FriendCollectionService fcs = new  FriendCollectionService();
+     
+		public List getAllFriends(){
+	   List allfrnds = fcs.getAllFriends();
+	   return allfrnds;
+	   
+         }
+		
+	
+		
+		
+	}
+
+}
