@@ -64,3 +64,5 @@
 0:0:0:0:0:0:0:1 - - [16/May/2018:12:24:11 +0530] "GET /CRUDJerseyFriends/rest/friends/getall HTTP/1.1" 200 221
 0:0:0:0:0:0:0:1 - - [16/May/2018:12:24:20 +0530] "GET /CRUDJerseyFriends/rest/friends/getall HTTP/1.1" 200 221
 0:0:0:0:0:0:0:1 - - [16/May/2018:12:26:26 +0530] "GET /CRUDJerseyFriends/rest/friends/getall HTTP/1.1" 200 221
+0:0:0:0:0:0:0:1 - - [16/May/2018:12:50:21 +0530] "GET /CRUDJerseyFriends/rest/friends/getall HTTP/1.1" 200 221
+0:0:0:0:0:0:0:1 - - [16/May/2018:13:04:42 +0530] "GET /CRUDJerseyFriends/rest/friends/1 HTTP/1.1" 200 48
