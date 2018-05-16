@@ -49,4 +49,21 @@ public class FriendsCollectionService {
 		return searchedfrnd;
 	
 	}
+
+	public Friend updateFriend(Friend friend) {
+		// TODO Auto-generated method stub
+		friendsMap.put(friend.getId(), friend);
+		System.out.println("Updated: " + friend.location + " " + friend.getName()  + " "+ friend.getId());
+		return friend;
+	}
+	
+	public Friend deleteFriend(int myid) {
+		// TODO Auto-generated method stub
+		Friend f = friendsMap.remove(myid);
+		return f; 
+	}
+
+
+
 }
+

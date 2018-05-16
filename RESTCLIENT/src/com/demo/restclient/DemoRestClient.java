@@ -21,30 +21,31 @@ public class DemoRestClient {
 		
 		WebTarget webTarget = client.target(getCustomURI());
 
-		String response = webTarget.path("rest")
-				                    .path("cts")
-				                    .path("hi")
-				                    .request()
-				                    .accept(MediaType.TEXT_PLAIN)
-									.get(Response.class)
-									.toString();
-
-		System.out.println(response);
-		
+//		String response = webTarget.path("rest")
+//				                    .path("friends")
+//				                    .path("delete")
+//				                    .path("1")
+//				                    .request()
+//				                    .accept(MediaType.TEXT_PLAIN)
+//									.get(Response.class)
+//									.toString();
+//
+//		System.out.println(response);
+//		
 		String message = webTarget.path("rest")
-                .path("cts")
-                .path("hi")
+                .path("friends")
+                .path("delete")
+                .path("1")
                 .request()
-                .accept(MediaType.TEXT_PLAIN)
-				.get(String.class)
+                .accept(MediaType.APPLICATION_JSON)
+				.delete()
 				.toString();
-
 System.out.println(message);
 	}
 	
 	private static URI getCustomURI() {
 	       
-	return UriBuilder.fromUri("http://localhost:8080/SamplerRest").build();
+	return UriBuilder.fromUri("http://localhost:8080/CRUDJerseyFriends").build();
 	}
 	}
 	

@@ -2,7 +2,9 @@ package Friends;
 
 import java.util.List;
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -41,14 +43,27 @@ public class FriendsController {
 
 	} 
 	
-	//update the friend
-	public void updateFriend(){
-		
-	}
 	
-	//delete the friend
-	public void deleteFriend(){
+	//update the friend
+		@POST
+		@Path("/update")
+		@Produces(MediaType.APPLICATION_JSON)
+		public List<Friend> updateFriend(Friend friend){
+			Friend f = friendsCollectionService.updateFriend(friend);
+			System.out.println("Friend is updated: " + f.getName());
+			List<Friend> allfriends = friendsCollectionService.getAllFriends();
+			return allfriends;
+		}
 		
+	@DELETE
+	@Path("/delete/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	//delete the friend
+	public List deleteFriend(@PathParam("id") int myid){
+	
+		Friend deleteFriend = friendsCollectionService.deleteFriend(myid);
+		List<Friend> allfriends =friendsCollectionService.getAllFriends();
+		return allfriends;
 	}
 
 }
